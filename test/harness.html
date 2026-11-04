@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><title>CSV viewer harness</title>
+<style>html,body{margin:0;height:100%;background:#334155}iframe{width:100%;height:100%;border:0;display:block}</style>
+</head>
+<body>
+<iframe id="viewer" src="/viewer.html"></iframe>
+<script>
+const iframe = document.getElementById('viewer');
+const params = new URLSearchParams(location.search);
+const file = params.get('file') || '/test/fixture.csv';
+const theme = params.get('theme') || 'light';
+let doc = null;
+let viewerReady = false;
+
+function sendDoc () {
+  if (doc && viewerReady) iframe.contentWindow.postMessage({ type: 'JCP_RENDER', doc }, '*');
+}
+
+addEventListener('message', (event) => {
+  if (event.source !== iframe.contentWindow) return;
+  if (event.data && event.data.type === 'JCP_VIEWER_READY') {
+    viewerReady = true;
+    sendDoc();
+  }
+  if (event.data && event.data.type === 'JCP_VIEWER_RENDERED') document.title = 'READY';
+  if (event.data && event.data.type === 'JCP_VIEWER_CLOSE') document.title = 'CLOSED';
+});
+
+fetch(file).then(r => r.arrayBuffer()).then(buffer => {
+  const bytes = new Uint8Array(buffer);
+  let binary = '';
+  for (let i = 0; i < bytes.length; i += 0x8000) binary += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+  doc = {
+    filename: params.get('name') || 'clientes-2026.csv',
+    url: file,
+    size: bytes.length,
+    contentType: 'text/csv',
+    bytesBase64: btoa(binary),
+    jiraTheme: theme
+  };
+  sendDoc();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="optionsTitle">CSV Preview for Jira — Settings</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body class="options">
+  <main class="page">
+    <header class="page-head">
+      <span class="brand-mark">CSV</span>
+      <div>
+        <h1 data-i18n="extName">CSV Preview for Jira</h1>
+        <p data-i18n="optionsSubtitle">Preview CSV and TSV attachments without downloading them.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2 data-i18n="appearance">Appearance</h2>
+
+      <label class="field" for="theme">
+        <span><span data-i18n="theme">Theme</span>
+          <span class="field-hint" data-i18n="themeHint">Auto follows the Jira theme.</span>
+        </span>
+        <select id="theme">
+          <option value="auto" data-i18n="auto">Auto</option>
+          <option value="light" data-i18n="light">Light</option>
+          <option value="dark" data-i18n="dark">Dark</option>
+        </select>
+      </label>
+
+      <label class="field" for="density">
+        <span data-i18n="rowDensity">Row density</span>
+        <select id="density">
+          <option value="comfortable" data-i18n="comfortable">Comfortable</option>
+          <option value="compact" data-i18n="compact">Compact</option>
+        </select>
+      </label>
+
+      <label class="field" for="font-size">
+        <span data-i18n="textSize">Text size</span>
+        <span class="range-wrap">
+          <input type="range" id="font-size" min="11" max="18" step="1">
+          <output class="range-out" id="font-size-out">13 px</output>
+        </span>
+      </label>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="reading">Reading</h2>
+      <label class="toggle">
+        <input type="checkbox" id="first-row-header">
+        <span>
+          <strong data-i18n="useFirstRowHeader">Use the first row as the header</strong>
+          <em data-i18n="headerHint">You can change it at any time in the viewer with the “Header” button.</em>
+        </span>
+      </label>
+      <p class="form-note" data-i18n="readingNote">The viewer automatically detects the delimiter (comma, semicolon, tab or pipe) and the encoding. You can also change them in the toolbar.</p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="jiraSites">Jira sites</h2>
+      <p data-i18n="sitesIntro">The extension works with Jira Cloud by default. For Jira Data Center or a custom domain, add the base URL and grant access only to that site.</p>
+
+      <div class="chips" aria-label="Included sites" data-i18n-aria-label="includedSites">
+        <span class="chip">*.atlassian.net</span>
+        <span class="chip">*.atlassian.com</span>
+        <span class="chip">*.jira.com</span>
+      </div>
+
+      <div class="site-list" id="site-list"></div>
+
+      <form class="site-form" id="site-form">
+        <input type="text" inputmode="url" id="site-input" placeholder="https://jira.mycompany.com" autocomplete="off" spellcheck="false" aria-label="Jira site URL" data-i18n-placeholder="sitePlaceholder" data-i18n-aria-label="siteAria">
+        <button class="btn" type="submit" data-i18n="addSite">Add site</button>
+      </form>
+      <p class="form-error" id="site-error" hidden></p>
+      <p class="form-note" data-i18n="sitesReloadNote">After adding or removing a site, reload the Jira tabs you already have open.</p>
+      <button class="btn secondary small" type="button" id="reload-tabs" data-i18n="reloadJiraTabs" hidden>Reload Jira tabs</button>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="downloads">Downloads</h2>
+      <p data-i18n="downloadsIntro">Some Jira installations serve attachments from an external domain (for example, an S3 bucket). If the preview fails with a permission warning, enable this option.</p>
+      <label class="toggle">
+        <input type="checkbox" id="broad-access">
+        <span>
+          <strong data-i18n="allowAnyDomain">Allow downloading attachments from any domain</strong>
+          <em data-i18n="allowAnyDomainHint">Only used for the file you ask to preview. It is off by default and can be revoked here.</em>
+        </span>
+      </label>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="shortcuts">Shortcuts</h2>
+      <dl class="shortcuts">
+        <dt><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Y</kbd></dt>
+        <dd data-i18n="commandOpenPanel">Open CSV attachments for this issue</dd>
+        <dt><kbd>Esc</kbd></dt>
+        <dd data-i18n="shortcutClose">Close the viewer or the open dialog</dd>
+        <dt><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>F</kbd></dt>
+        <dd data-i18n="shortcutSearch">Search within the CSV</dd>
+        <dt><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd></dt>
+        <dd data-i18n="shortcutCopy">Copy the selected cell</dd>
+      </dl>
+      <p class="form-note" data-i18n="shortcutNote">You can change the shortcut at chrome://extensions/shortcuts.</p>
+    </section>
+
+    <section class="card">
+      <h2 data-i18n="privacy">Privacy</h2>
+      <p data-i18n="privacyIntro">The extension does not collect data, use analytics, or send anything outside your browser. It only queries the attachment list of the issue you are viewing and downloads the file you choose to preview, using your Jira session.</p>
+      <p class="form-note" data-i18n="trademarkDisclaimer">Not affiliated with, endorsed by, or sponsored by Atlassian. Jira is a trademark of Atlassian Pty Ltd.</p>
+    </section>
+
+    <p class="foot-note" id="version-line">CSV Preview for Jira · version 1.0.0</p>
+    <div class="saved" id="saved" role="status" aria-live="polite" data-i18n="saved">Saved</div>
+  </main>
+
+  <script src="../src/i18n.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

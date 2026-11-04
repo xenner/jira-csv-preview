@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — CSV Preview for Jira</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f8fafc;
+      color: #0f172a;
+      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 24px 72px;
+    }
+    .badge {
+      display: inline-grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 11px;
+      background: linear-gradient(145deg, #0e7490, #155e75);
+      color: #ecfeff;
+      font: 700 11px/1 ui-monospace, monospace;
+      letter-spacing: .06em;
+      vertical-align: middle;
+      margin-right: 12px;
+    }
+    h1 { display: inline; font-size: 30px; letter-spacing: -.02em; }
+    h2 { margin-top: 36px; font-size: 18px; }
+    p, li { color: #334155; }
+    ul { padding-left: 22px; }
+    .meta { margin-top: 8px; color: #64748b; font-size: 13px; }
+    a { color: #0e7490; }
+    code {
+      padding: 1px 5px;
+      border-radius: 4px;
+      background: #eef2f6;
+      font: 13px ui-monospace, monospace;
+    }
+    .card {
+      margin-top: 28px;
+      padding: 20px 22px;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 0 0 1px #e2e8f0, 0 8px 24px rgba(15, 23, 42, .04);
+    }
+    footer { margin-top: 44px; color: #94a3b8; font-size: 12px; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0b1220; color: #e2e8f0; }
+      p, li { color: #cbd5e1; }
+      .meta, footer { color: #94a3b8; }
+      a { color: #67e8f9; }
+      code { background: #162033; }
+      .card { background: #111a2b; box-shadow: 0 0 0 1px #263449; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="badge">CSV</span><h1>Privacy Policy — CSV Preview for Jira</h1>
+      <p class="meta">Last updated: November 2026</p>
+    </header>
+
+    <p><strong>CSV Preview for Jira does not collect, sell, share, or transmit personal data.</strong></p>
+
+    <h2>Data processed</h2>
+    <p>The extension works only with data that is already in your browser and in your Jira instance:</p>
+    <ul>
+      <li>The key of the Jira issue you are viewing (for example, <code>ABC-123</code>), read from the URL or the page.</li>
+      <li>The attachment list of that issue, obtained from your own Jira REST API.</li>
+      <li>The content of the <code>.csv</code> or <code>.tsv</code> attachment you choose to preview, downloaded from your own Jira with your existing session.</li>
+    </ul>
+    <p>All processing happens locally and is displayed in the viewer. No data is sent to the developer, because the extension has no servers.</p>
+
+    <h2>What is stored</h2>
+    <p>Only preferences are stored in <code>chrome.storage.local</code> on your computer:</p>
+    <ul>
+      <li>theme (auto, light or dark);</li>
+      <li>row density and text size;</li>
+      <li>whether the first row is used as a header;</li>
+      <li>additional Jira domains you add manually.</li>
+    </ul>
+    <p>You can remove this data by uninstalling the extension.</p>
+
+    <h2>Network requests</h2>
+    <p>The extension makes only these requests, always to your Jira instance:</p>
+    <ol>
+      <li><code>GET /rest/api/3/issue/{key}?fields=attachment</code> (or <code>/rest/api/2/...</code> on older installations) to read the attachment list.</li>
+      <li>The download of the attachment you click, following any redirect Jira returns (for example, to its media host).</li>
+    </ol>
+    <p>No analytics, fonts, scripts, images or other resources are loaded from the Internet. Papa Parse is bundled inside the extension; no remote code is executed.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>storage:</strong> save the preferences listed above.</li>
+      <li><strong>scripting:</strong> enable the extension on custom Jira domains you add manually.</li>
+      <li><strong>Atlassian host permissions:</strong> read the attachment list and download the file you choose.</li>
+      <li><strong>Optional <code>*://*/*</code>:</strong> only if you enable it, for Jira installations that serve attachments from an external domain. You can revoke it in Settings at any time.</li>
+    </ul>
+
+    <h2>Third parties</h2>
+    <ul>
+      <li><a href="https://www.papaparse.com/">Papa Parse</a> (MIT) is bundled in <code>vendor/</code> to parse CSV. It is not a remote service.</li>
+      <li>This extension is not affiliated with, endorsed by, or sponsored by Atlassian. Jira is a trademark of Atlassian Pty Ltd.</li>
+    </ul>
+
+    <div class="card">
+      <h2 style="margin-top:0">Contact</h2>
+      <p style="margin-bottom:0">For privacy questions, use the developer contact email shown on the extension's Chrome Web Store listing.</p>
+    </div>
+
+    <h2>Changes</h2>
+    <p>If the extension's data handling changes, this policy will be updated before the new version is published.</p>
+
+    <footer>CSV Preview for Jira · Privacy Policy</footer>
+  </main>
+</body>
+</html>

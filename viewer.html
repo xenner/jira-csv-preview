@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="csvPreview">CSV preview</title>
+  <link rel="stylesheet" href="src/viewer.css">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true">
+    <symbol id="i-search" viewBox="0 0 20 20">
+      <circle cx="8.5" cy="8.5" r="5.25" fill="none" stroke="currentColor" stroke-width="1.7"/>
+      <path d="m12.4 12.4 4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-x" viewBox="0 0 20 20">
+      <path d="M5 5l10 10M15 5L5 15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-download" viewBox="0 0 20 20">
+      <path d="M10 3v9m0 0 3.5-3.5M10 12 6.5 8.5M4 14.5v1.2c0 .7.6 1.3 1.3 1.3h9.4c.7 0 1.3-.6 1.3-1.3v-1.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 20 20">
+      <path d="M16.2 12.1A6.6 6.6 0 0 1 7.9 3.8 6.6 6.6 0 1 0 16.2 12.1Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 20 20">
+      <circle cx="10" cy="10" r="3.3" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M10 2v1.6M10 16.4V18M2 10h1.6M16.4 10H18M4.35 4.35l1.13 1.13M14.52 14.52l1.13 1.13M15.65 4.35l-1.13 1.13M5.48 14.52l-1.13 1.13" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-columns" viewBox="0 0 20 20">
+      <rect x="3" y="3.5" width="14" height="13" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M8 3.8v12.4M12.3 3.8v12.4" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    </symbol>
+    <symbol id="i-header" viewBox="0 0 20 20">
+      <rect x="3" y="3.5" width="14" height="13" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M3.3 7.6h13.4" fill="none" stroke="currentColor" stroke-width="1.8"/>
+    </symbol>
+    <symbol id="i-more" viewBox="0 0 20 20">
+      <circle cx="4.5" cy="10" r="1.35" fill="currentColor"/>
+      <circle cx="10" cy="10" r="1.35" fill="currentColor"/>
+      <circle cx="15.5" cy="10" r="1.35" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-copy" viewBox="0 0 20 20">
+      <rect x="7" y="7" width="9.2" height="9.2" rx="1.4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M12.6 7V5.2c0-.8-.6-1.4-1.4-1.4H5.2c-.8 0-1.4.6-1.4 1.4v6c0 .8.6 1.4 1.4 1.4H7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    </symbol>
+    <symbol id="i-refresh" viewBox="0 0 20 20">
+      <path d="M16.4 10a6.4 6.4 0 1 1-1.9-4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M16.4 3.4v4.1h-4.1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-alert" viewBox="0 0 20 20">
+      <path d="M10 3.2 17.4 16H2.6L10 3.2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M10 8v3.3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      <circle cx="10" cy="13.8" r=".9" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <div class="app" id="app">
+    <header class="topbar">
+      <div class="file-block">
+        <div class="file-icon" id="file-icon">CSV</div>
+        <div class="file-copy">
+          <div class="file-title-row">
+            <h1 id="file-name" data-i18n="csvPreview">CSV preview</h1>
+            <span class="file-size" id="file-size"></span>
+          </div>
+          <p class="file-stats" id="file-stats" data-i18n="preparingFile">Preparing the file…</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button type="button" class="icon-btn" id="theme-btn" title="Change theme" aria-label="Change theme" data-i18n-title="changeTheme" data-i18n-aria-label="changeTheme">
+          <svg class="theme-icon" id="theme-icon-moon"><use href="#i-moon"></use></svg>
+          <svg class="theme-icon is-hidden" id="theme-icon-sun"><use href="#i-sun"></use></svg>
+        </button>
+        <a class="btn ghost" id="download-btn" href="#" target="_blank" rel="noopener noreferrer" title="Download the original file" data-i18n-title="downloadOriginal">
+          <svg><use href="#i-download"></use></svg>
+          <span class="btn-label" data-i18n="download">Download</span>
+        </a>
+        <button type="button" class="icon-btn close-btn" id="close-btn" title="Close (Esc)" aria-label="Close preview" data-i18n-title="closeWithEsc" data-i18n-aria-label="closePreview">
+          <svg><use href="#i-x"></use></svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="toolbar" role="toolbar" aria-label="Viewer controls" data-i18n-aria-label="viewerControls">
+      <div class="search-box">
+        <svg class="search-icon"><use href="#i-search"></use></svg>
+        <input id="search" type="search" placeholder="Search all cells…" autocomplete="off" spellcheck="false" aria-label="Search the CSV" data-i18n-placeholder="searchPlaceholder" data-i18n-aria-label="searchAria">
+        <button type="button" class="search-clear is-hidden" id="search-clear" aria-label="Clear search" data-i18n-aria-label="clearSearch">
+          <svg><use href="#i-x"></use></svg>
+        </button>
+        <kbd class="search-kbd">/</kbd>
+      </div>
+
+      <div class="toolbar-controls">
+        <label class="select-control" title="Column delimiter" data-i18n-title="delimiterAria">
+          <span class="control-label" data-i18n="delimiter">Delimiter</span>
+          <select id="delimiter" aria-label="Column delimiter" data-i18n-aria-label="delimiterAria">
+            <option value="auto" data-i18n="auto">Auto</option>
+            <option value="," data-i18n="delimiterComma">Comma</option>
+            <option value=";" data-i18n="delimiterSemicolon">Semicolon</option>
+            <option value="tab" data-i18n="delimiterTab">Tab</option>
+            <option value="|" data-i18n="delimiterPipe">Pipe</option>
+          </select>
+        </label>
+
+        <label class="select-control" title="File encoding" data-i18n-title="encodingAria">
+          <span class="control-label" data-i18n="encoding">Encoding</span>
+          <select id="encoding" aria-label="File encoding" data-i18n-aria-label="encodingAria">
+            <option value="auto" data-i18n="auto">Auto</option>
+            <option value="utf-8">UTF-8</option>
+            <option value="windows-1252">Windows-1252</option>
+            <option value="iso-8859-1">ISO-8859-1</option>
+            <option value="utf-16le">UTF-16 LE</option>
+            <option value="utf-16be">UTF-16 BE</option>
+          </select>
+        </label>
+
+        <button type="button" class="toggle-btn is-on" id="header-btn" aria-pressed="true" title="Use the first row as the header" data-i18n-title="headerTitle">
+          <svg><use href="#i-header"></use></svg>
+          <span class="btn-label" data-i18n="header">Header</span>
+        </button>
+
+        <button type="button" class="btn ghost" id="columns-btn" aria-haspopup="dialog" aria-expanded="false" title="Show or hide columns" data-i18n-title="columnsTitle">
+          <svg><use href="#i-columns"></use></svg>
+          <span class="btn-label" data-i18n="columns">Columns</span>
+          <span class="count-badge" id="columns-count">0</span>
+        </button>
+
+        <button type="button" class="icon-btn" id="more-btn" aria-haspopup="menu" aria-expanded="false" aria-label="More options" title="More options" data-i18n-aria-label="moreOptions" data-i18n-title="moreOptions">
+          <svg><use href="#i-more"></use></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="notice" id="notice" hidden>
+      <svg class="notice-icon"><use href="#i-alert"></use></svg>
+      <span id="notice-text"></span>
+      <button type="button" class="notice-close" id="notice-close" aria-label="Close" data-i18n-aria-label="close">
+        <svg><use href="#i-x"></use></svg>
+      </button>
+    </div>
+
+    <main class="grid-area">
+      <div class="state-screen" id="loading-state">
+        <span class="spinner" aria-hidden="true"></span>
+        <p class="state-title" id="loading-title" data-i18n="preparingCsv">Preparing the CSV…</p>
+        <p class="state-detail" id="loading-detail" data-i18n="loadingDetail">This may take a few seconds for large files.</p>
+      </div>
+
+      <div class="state-screen is-hidden" id="fatal-state" role="alert">
+        <div class="state-icon error-icon"><svg><use href="#i-alert"></use></svg></div>
+        <p class="state-title" id="fatal-title" data-i18n="couldNotOpenCsv">Could not open the CSV</p>
+        <p class="state-detail" id="fatal-detail"></p>
+        <button type="button" class="btn" id="retry-btn" data-i18n="retryOpen">Try again</button>
+      </div>
+
+      <div class="state-screen is-hidden" id="empty-state">
+        <div class="state-icon"><svg><use href="#i-columns"></use></svg></div>
+        <p class="state-title" data-i18n="noRowsToShowTitle">No rows to show</p>
+        <p class="state-detail" id="empty-detail" data-i18n="noRowsHeaderOnly">The file has headers but no data rows.</p>
+      </div>
+
+      <div class="grid-wrap is-hidden" id="grid-wrap" tabindex="0" aria-label="CSV data table" data-i18n-aria-label="tableAria">
+        <table class="grid" id="grid">
+          <colgroup id="colgroup"></colgroup>
+          <thead id="thead"></thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer class="statusbar">
+      <span class="status-left" id="status-left">—</span>
+      <span class="selection-info" id="selection-info"></span>
+      <span class="status-right">
+        <kbd class="copy-kbd" id="copy-kbd">Ctrl C</kbd>
+        <button type="button" class="btn small ghost" id="copy-cell" disabled>
+          <svg><use href="#i-copy"></use></svg>
+          <span data-i18n="copyCell">Copy cell</span>
+        </button>
+      </span>
+    </footer>
+  </div>
+
+  <div class="popover columns-popover" id="columns-popover" role="dialog" aria-label="Visible columns" data-i18n-aria-label="visibleColumnsAria" hidden>
+    <div class="popover-head">
+      <strong data-i18n="columns">Columns</strong>
+      <button type="button" class="text-btn" id="columns-all" data-i18n="showAll">Show all</button>
+    </div>
+    <div class="popover-search">
+      <svg><use href="#i-search"></use></svg>
+      <input type="search" id="columns-filter" placeholder="Filter columns…" autocomplete="off" spellcheck="false" aria-label="Filter column list" data-i18n-placeholder="filterColumns" data-i18n-aria-label="filterColumnsAria">
+    </div>
+    <div class="columns-list" id="columns-list"></div>
+  </div>
+
+  <div class="popover more-popover" id="more-popover" role="menu" aria-label="More options" data-i18n-aria-label="moreOptions" hidden>
+    <button type="button" class="menu-item" id="copy-view" role="menuitem">
+      <svg><use href="#i-copy"></use></svg>
+      <span><strong data-i18n="copyViewTsv">Copy view as TSV</strong><small data-i18n="copyViewTsvHint">Paste directly into a spreadsheet</small></span>
+    </button>
+    <button type="button" class="menu-item" id="export-view" role="menuitem">
+      <svg><use href="#i-download"></use></svg>
+      <span><strong data-i18n="exportView">Export filtered view</strong><small data-i18n="exportViewHint">Download a CSV with the current order and filter</small></span>
+    </button>
+    <div class="menu-sep"></div>
+    <button type="button" class="menu-item" id="reset-widths" role="menuitem">
+      <svg><use href="#i-refresh"></use></svg>
+      <span><strong data-i18n="resetWidths">Reset column widths</strong><small data-i18n="resetWidthsHint">Fit columns to their content</small></span>
+    </button>
+    <div class="menu-hint">
+      <span><kbd>/</kbd> <span data-i18n="searchHint">search</span></span>
+      <span><kbd>Esc</kbd> <span data-i18n="closeHint">close</span></span>
+      <span><kbd>Ctrl C</kbd> <span data-i18n="copyCellHint">copy cell</span></span>
+    </div>
+  </div>
+
+  <div class="modal-layer" id="cell-dialog" hidden>
+    <div class="modal-backdrop" id="cell-backdrop"></div>
+    <div class="cell-panel" role="dialog" aria-modal="true" aria-labelledby="cell-title">
+      <header class="cell-head">
+        <span id="cell-title" data-i18n="cell">Cell</span>
+        <button type="button" class="icon-btn" id="cell-close" aria-label="Close" data-i18n-aria-label="close">
+          <svg><use href="#i-x"></use></svg>
+        </button>
+      </header>
+      <pre class="cell-value" id="cell-value"></pre>
+      <footer class="cell-foot">
+        <span id="cell-chars"></span>
+        <button type="button" class="btn small" id="cell-copy">
+          <svg><use href="#i-copy"></use></svg>
+          <span data-i18n="copyValue">Copy value</span>
+        </button>
+      </footer>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="vendor/papaparse.min.js"></script>
+  <script src="src/i18n.js"></script>
+  <script src="src/viewer.js"></script>
+</body>
+</html>

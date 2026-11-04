@@ -1,0 +1,5 @@
+ID;Producto;Precio;Notas
+1;Café;1.234,56;"""Incluye"" comas, punto y coma"
+2;Té verde;987,65;Sin observaciones
+3;Azúcar;2.000,00;"Entrega; urgente"
+4;Sal;45,10;

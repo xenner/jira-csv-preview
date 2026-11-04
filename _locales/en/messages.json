@@ -1,0 +1,602 @@
+{
+  "extName": {
+    "message": "CSV Preview for Jira"
+  },
+  "extDescription": {
+    "message": "Preview CSV and TSV attachments on a Jira issue in a table viewer, without downloading them."
+  },
+  "commandOpenPanel": {
+    "message": "Open CSV attachments for this issue"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "retry": {
+    "message": "Retry"
+  },
+  "download": {
+    "message": "Download"
+  },
+  "downloadFile": {
+    "message": "Download file"
+  },
+  "openSettings": {
+    "message": "Open settings"
+  },
+  "preview": {
+    "message": "Preview"
+  },
+  "refresh": {
+    "message": "Refresh"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "saved": {
+    "message": "Saved"
+  },
+  "versionFooter": {
+    "message": "CSV Preview for Jira · version $1"
+  },
+  "noResponse": {
+    "message": "No response"
+  },
+  "attachmentsInIssue": {
+    "message": "Attachments in this issue"
+  },
+  "attachmentsCountOne": {
+    "message": "1 $1 attachment"
+  },
+  "attachmentsCountMany": {
+    "message": "$1 $2 attachments"
+  },
+  "previewFile": {
+    "message": "Preview $1"
+  },
+  "viewAttachments": {
+    "message": "View the CSV/TSV attachments in this issue"
+  },
+  "downloadingAttachment": {
+    "message": "Downloading attachment…"
+  },
+  "downloadingFile": {
+    "message": "Downloading $1…"
+  },
+  "openingViewer": {
+    "message": "Opening the viewer…"
+  },
+  "viewerNotResponding": {
+    "message": "The viewer did not respond"
+  },
+  "viewerTimeoutDetail": {
+    "message": "The viewer page took too long to load. Try again or download the file."
+  },
+  "couldNotLoadCsv": {
+    "message": "Could not load the CSV"
+  },
+  "fileTooLarge": {
+    "message": "The file is too large"
+  },
+  "permissionErrorDetail": {
+    "message": "Chrome blocked the download because the attachment is served from another domain. You can grant that permission in the extension settings. Details: $1"
+  },
+  "csvPreview": {
+    "message": "CSV preview"
+  },
+  "csvViewer": {
+    "message": "CSV viewer"
+  },
+  "unknownMessage": {
+    "message": "Unknown message"
+  },
+  "couldNotQueryIssue": {
+    "message": "Could not query the issue"
+  },
+  "couldNotDownloadAttachment": {
+    "message": "Could not download the attachment (HTTP $1)"
+  },
+  "sessionExpired": {
+    "message": "The Jira session expired. Reload the page and sign in again."
+  },
+  "fileTooLargeWithSize": {
+    "message": "The file is $1. The viewer limit is $2."
+  },
+  "fileTooLargeLimit": {
+    "message": "The file exceeds the $1 limit."
+  },
+  "fileEmpty": {
+    "message": "The file is empty."
+  },
+  "loginPageReturned": {
+    "message": "Jira returned a sign-in page. Reload the issue and sign in again."
+  },
+  "preparingFile": {
+    "message": "Preparing the file…"
+  },
+  "changeTheme": {
+    "message": "Change theme"
+  },
+  "downloadOriginal": {
+    "message": "Download the original file"
+  },
+  "closeWithEsc": {
+    "message": "Close (Esc)"
+  },
+  "closePreview": {
+    "message": "Close preview"
+  },
+  "searchPlaceholder": {
+    "message": "Search all cells…"
+  },
+  "searchAria": {
+    "message": "Search the CSV"
+  },
+  "clearSearch": {
+    "message": "Clear search"
+  },
+  "delimiter": {
+    "message": "Delimiter"
+  },
+  "auto": {
+    "message": "Auto"
+  },
+  "delimiterComma": {
+    "message": "Comma"
+  },
+  "delimiterSemicolon": {
+    "message": "Semicolon"
+  },
+  "delimiterTab": {
+    "message": "Tab"
+  },
+  "delimiterPipe": {
+    "message": "Pipe"
+  },
+  "delimiterAria": {
+    "message": "Column delimiter"
+  },
+  "encoding": {
+    "message": "Encoding"
+  },
+  "encodingAria": {
+    "message": "File encoding"
+  },
+  "header": {
+    "message": "Header"
+  },
+  "headerTitle": {
+    "message": "Use the first row as the header"
+  },
+  "columns": {
+    "message": "Columns"
+  },
+  "columnsTitle": {
+    "message": "Show or hide columns"
+  },
+  "moreOptions": {
+    "message": "More options"
+  },
+  "preparingCsv": {
+    "message": "Preparing the CSV…"
+  },
+  "loadingDetail": {
+    "message": "This may take a few seconds for large files."
+  },
+  "couldNotOpenCsv": {
+    "message": "Could not open the CSV"
+  },
+  "retryOpen": {
+    "message": "Try again"
+  },
+  "noRowsToShowTitle": {
+    "message": "No rows to show"
+  },
+  "noRowsHeaderOnly": {
+    "message": "The file has headers but no data rows."
+  },
+  "tableAria": {
+    "message": "CSV data table"
+  },
+  "copyCell": {
+    "message": "Copy cell"
+  },
+  "showAll": {
+    "message": "Show all"
+  },
+  "filterColumns": {
+    "message": "Filter columns…"
+  },
+  "filterColumnsAria": {
+    "message": "Filter column list"
+  },
+  "visibleColumnsAria": {
+    "message": "Visible columns"
+  },
+  "copyViewTsv": {
+    "message": "Copy view as TSV"
+  },
+  "copyViewTsvHint": {
+    "message": "Paste directly into a spreadsheet"
+  },
+  "exportView": {
+    "message": "Export filtered view"
+  },
+  "exportViewHint": {
+    "message": "Download a CSV with the current order and filter"
+  },
+  "resetWidths": {
+    "message": "Reset column widths"
+  },
+  "resetWidthsHint": {
+    "message": "Fit columns to their content"
+  },
+  "searchHint": {
+    "message": "search"
+  },
+  "closeHint": {
+    "message": "close"
+  },
+  "copyCellHint": {
+    "message": "copy cell"
+  },
+  "cell": {
+    "message": "Cell"
+  },
+  "copyValue": {
+    "message": "Copy value"
+  },
+  "analyzingFile": {
+    "message": "Analyzing the file…"
+  },
+  "analyzingCsv": {
+    "message": "Analyzing the CSV…"
+  },
+  "analyzingDetail": {
+    "message": "Detecting the delimiter, encoding and columns."
+  },
+  "autoWithValue": {
+    "message": "Auto ($1)"
+  },
+  "rowOne": {
+    "message": "1 row"
+  },
+  "rowMany": {
+    "message": "$1 rows"
+  },
+  "columnOne": {
+    "message": "1 column"
+  },
+  "columnMany": {
+    "message": "$1 columns"
+  },
+  "characterOne": {
+    "message": "1 character"
+  },
+  "characterMany": {
+    "message": "$1 characters"
+  },
+  "cellEmpty": {
+    "message": "(empty)"
+  },
+  "selectedCell": {
+    "message": "$1 · $2: $3"
+  },
+  "rowLabel": {
+    "message": "Row $1"
+  },
+  "cellTitle": {
+    "message": "$1 · $2"
+  },
+  "sortedBy": {
+    "message": "sorted by «$1» $2"
+  },
+  "columnsVisible": {
+    "message": "$1 of $2 visible"
+  },
+  "columnsButtonTitle": {
+    "message": "Show or hide columns ($1 of $2)"
+  },
+  "switchToLight": {
+    "message": "Switch to light theme"
+  },
+  "switchToDark": {
+    "message": "Switch to dark theme"
+  },
+  "headerOnTitle": {
+    "message": "The first row is used as the header"
+  },
+  "headerOffTitle": {
+    "message": "The first row is shown as data"
+  },
+  "resizerTitle": {
+    "message": "Drag to resize · double-click to fit"
+  },
+  "rowNumber": {
+    "message": "Row number"
+  },
+  "emptyHeaderOnly": {
+    "message": "The file only has a header row. Turn off “Header” to view it as data."
+  },
+  "emptyNoRows": {
+    "message": "The file does not contain rows."
+  },
+  "emptyNoMatches": {
+    "message": "No rows match “$1”."
+  },
+  "emptyNothing": {
+    "message": "No rows to show."
+  },
+  "couldNotReadCsv": {
+    "message": "Could not read the CSV"
+  },
+  "couldNotPrepareFile": {
+    "message": "Could not prepare the file"
+  },
+  "fileEmptyError": {
+    "message": "The file is empty."
+  },
+  "noRowsFound": {
+    "message": "No rows were found in the file."
+  },
+  "analyzerLoadError": {
+    "message": "Could not load the CSV parser."
+  },
+  "encodingUnsupported": {
+    "message": "The encoding $1 is not supported by this browser."
+  },
+  "invalidContent": {
+    "message": "The viewer did not receive the file content."
+  },
+  "delimiterNotDetected": {
+    "message": "Could not detect the delimiter; $1 was used."
+  },
+  "missingQuotesOne": {
+    "message": "1 cell has an unclosed quote; check the last rows."
+  },
+  "missingQuotesMany": {
+    "message": "$1 cells have unclosed quotes; check the last rows."
+  },
+  "selectCellFirst": {
+    "message": "Select a cell first"
+  },
+  "cellCopied": {
+    "message": "Cell copied"
+  },
+  "emptyCellCopied": {
+    "message": "Empty cell copied"
+  },
+  "copied": {
+    "message": "Copied"
+  },
+  "clipboardError": {
+    "message": "Could not copy to the clipboard"
+  },
+  "noRowsToCopy": {
+    "message": "No rows to copy"
+  },
+  "copiedRows": {
+    "message": "Copied $1 of $2 rows"
+  },
+  "copiedViewTsv": {
+    "message": "View copied as TSV"
+  },
+  "valueCopied": {
+    "message": "Value copied"
+  },
+  "emptyValueCopied": {
+    "message": "Empty value copied"
+  },
+  "noDataExport": {
+    "message": "No data to export"
+  },
+  "exportFailed": {
+    "message": "Could not generate the CSV"
+  },
+  "viewExported": {
+    "message": "View exported"
+  },
+  "widthsReset": {
+    "message": "Column widths reset"
+  },
+  "lastColumnVisible": {
+    "message": "At least one column must remain visible"
+  },
+  "exportSuffix": {
+    "message": "-view"
+  },
+  "optionsTitle": {
+    "message": "CSV Preview for Jira — Settings"
+  },
+  "optionsSubtitle": {
+    "message": "Preview CSV and TSV attachments without downloading them."
+  },
+  "appearance": {
+    "message": "Appearance"
+  },
+  "theme": {
+    "message": "Theme"
+  },
+  "themeHint": {
+    "message": "Auto follows the Jira theme."
+  },
+  "light": {
+    "message": "Light"
+  },
+  "dark": {
+    "message": "Dark"
+  },
+  "rowDensity": {
+    "message": "Row density"
+  },
+  "comfortable": {
+    "message": "Comfortable"
+  },
+  "compact": {
+    "message": "Compact"
+  },
+  "textSize": {
+    "message": "Text size"
+  },
+  "reading": {
+    "message": "Reading"
+  },
+  "useFirstRowHeader": {
+    "message": "Use the first row as the header"
+  },
+  "headerHint": {
+    "message": "You can change it at any time in the viewer with the “Header” button."
+  },
+  "readingNote": {
+    "message": "The viewer automatically detects the delimiter (comma, semicolon, tab or pipe) and the encoding. You can also change them in the toolbar."
+  },
+  "jiraSites": {
+    "message": "Jira sites"
+  },
+  "sitesIntro": {
+    "message": "The extension works with Jira Cloud by default. For Jira Data Center or a custom domain, add the base URL and grant access only to that site."
+  },
+  "noExtraSites": {
+    "message": "No extra sites."
+  },
+  "sitePlaceholder": {
+    "message": "https://jira.mycompany.com"
+  },
+  "siteAria": {
+    "message": "Jira site URL"
+  },
+  "addSite": {
+    "message": "Add site"
+  },
+  "sitesReloadNote": {
+    "message": "After adding or removing a site, reload the Jira tabs you already have open."
+  },
+  "reloadJiraTabs": {
+    "message": "Reload Jira tabs"
+  },
+  "downloads": {
+    "message": "Downloads"
+  },
+  "downloadsIntro": {
+    "message": "Some Jira installations serve attachments from an external domain (for example, an S3 bucket). If the preview fails with a permission warning, enable this option."
+  },
+  "allowAnyDomain": {
+    "message": "Allow downloading attachments from any domain"
+  },
+  "allowAnyDomainHint": {
+    "message": "Only used for the file you ask to preview. It is off by default and can be revoked here."
+  },
+  "shortcuts": {
+    "message": "Shortcuts"
+  },
+  "shortcutClose": {
+    "message": "Close the viewer or the open dialog"
+  },
+  "shortcutSearch": {
+    "message": "Search within the CSV"
+  },
+  "shortcutCopy": {
+    "message": "Copy the selected cell"
+  },
+  "shortcutNote": {
+    "message": "You can change the shortcut at chrome://extensions/shortcuts."
+  },
+  "privacy": {
+    "message": "Privacy"
+  },
+  "privacyIntro": {
+    "message": "The extension does not collect data, use analytics, or send anything outside your browser. It only queries the attachment list of the issue you are viewing and downloads the file you choose to preview, using your Jira session."
+  },
+  "trademarkDisclaimer": {
+    "message": "Not affiliated with, endorsed by, or sponsored by Atlassian. Jira is a trademark of Atlassian Pty Ltd."
+  },
+  "siteUrlRequired": {
+    "message": "Enter your Jira URL."
+  },
+  "siteUrlInvalid": {
+    "message": "The URL is not valid."
+  },
+  "siteUrlProtocol": {
+    "message": "The URL must start with http:// or https://."
+  },
+  "siteUrlCredentials": {
+    "message": "Do not include a username or password in the URL."
+  },
+  "siteDuplicate": {
+    "message": "That site is already in the list."
+  },
+  "sitePermissionRequestFailed": {
+    "message": "Chrome could not request permission for that site."
+  },
+  "sitePermissionDenied": {
+    "message": "Permission was not granted, so the site was not added."
+  },
+  "siteEnableError": {
+    "message": "Could not enable the site. Check the extension permissions."
+  },
+  "siteAdded": {
+    "message": "Site added"
+  },
+  "siteRemoved": {
+    "message": "Site removed"
+  },
+  "broadPermissionDenied": {
+    "message": "Permission was not granted"
+  },
+  "reloadFailed": {
+    "message": "Could not reload"
+  },
+  "tabsReloadedOne": {
+    "message": "1 tab reloaded"
+  },
+  "tabsReloadedMany": {
+    "message": "$1 tabs reloaded"
+  },
+  "noJiraTabs": {
+    "message": "No Jira tabs are open"
+  },
+  "removeSite": {
+    "message": "Remove"
+  },
+  "currentIssueAttachments": {
+    "message": "Attachments in the current issue"
+  },
+  "popupAttachmentsOne": {
+    "message": "1 $1 attachment in this issue"
+  },
+  "popupAttachmentsMany": {
+    "message": "$1 $2 attachments in this issue"
+  },
+  "openPreview": {
+    "message": "Open preview"
+  },
+  "popupEmptyTitle": {
+    "message": "Open a Jira issue with a .csv or .tsv attachment."
+  },
+  "popupEmptyHint": {
+    "message": "The CSV button will appear in the bottom-right corner of the issue."
+  },
+  "viewerControls": {
+    "message": "Viewer controls"
+  },
+  "includedSites": {
+    "message": "Included sites"
+  },
+  "columnFallback": {
+    "message": "column"
+  },
+  "fileReadErrorShort": {
+    "message": "Could not read the file"
+  },
+  "openFromJiraTitle": {
+    "message": "Open this viewer from Jira"
+  },
+  "openFromJiraDetail": {
+    "message": "Click the CSV button on an issue with .csv or .tsv attachments."
+  },
+  "localeCode": {
+    "message": "en"
+  }
+}

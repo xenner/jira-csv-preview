@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title data-i18n="extName">CSV Preview for Jira</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body class="popup">
+  <header class="pop-head">
+    <span class="brand-mark">CSV</span>
+    <div>
+      <strong data-i18n="extName">CSV Preview for Jira</strong>
+      <span class="sub" id="issue-key" data-i18n="currentIssueAttachments">Attachments in the current issue</span>
+    </div>
+  </header>
+
+  <main class="pop-body">
+    <section id="found" hidden>
+      <p class="found-label" id="found-label"></p>
+      <div class="list" id="found-list"></div>
+    </section>
+
+    <p class="empty" id="empty">
+      <strong data-i18n="popupEmptyTitle">Open a Jira issue with a .csv or .tsv attachment.</strong><br>
+      <span data-i18n="popupEmptyHint">The CSV button will appear in the bottom-right corner of the issue.</span>
+    </p>
+  </main>
+
+  <footer class="pop-foot">
+    <span class="shortcut-hint"><kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>Y</kbd></span>
+    <button class="link-btn" id="open-options" type="button" data-i18n="settings">Settings</button>
+  </footer>
+
+  <script src="../src/i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
