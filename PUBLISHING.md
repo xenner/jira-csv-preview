@@ -83,24 +83,29 @@ No uses una URL del GitLab privado: el revisor no puede iniciar sesión.
 
 ### Demostración incluida (recomendado)
 
-La extensión incluye una página de demostración que no requiere Jira ni login:
+La demo está publicada en GitHub Pages y no requiere instalar la extensión ni tener Jira:
 
-1. El revisor abre el popup del icono de la extensión.
-2. Pulsa **Open demo**.
-3. En la incidencia simulada, pulsa **Preview CSV**.
-4. Prueba búsqueda, ordenación, columnas, tema y exportación.
+```text
+https://xenner.github.io/jira-csv-preview/demo.html
+```
+
+1. Abrir esa URL.
+2. Pulsar **Preview CSV** en la incidencia simulada.
+3. Probar búsqueda, ordenación, columnas, tema y exportación.
+
+La misma demo también está incluida dentro de la extensión, en el popup: **Open demo**.
 
 Pegar en **Test instructions**:
 
 ```text
 The Jira test account may require an email verification code that reviewers cannot receive.
-To test the viewer without a Jira account:
-1. Click the extension icon.
-2. Choose "Open demo".
-3. Click "Preview CSV" on the simulated issue.
-4. Test search, sorting, column visibility, theme and CSV export.
 
-The demo uses bundled sample data. No Jira credentials are required.
+To test the viewer without a Jira account, open:
+https://xenner.github.io/jira-csv-preview/demo.html
+Click "Preview CSV" on the simulated issue.
+Test search, sorting, column visibility, theme and CSV export.
+
+The demo uses sample data and requires no Jira credentials. Installing the extension is optional for this demo.
 ```
 
 ### Jira real de prueba (opcional)

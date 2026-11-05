@@ -49,6 +49,10 @@ Con varios adjuntos, el botón abre un menú para elegir el archivo:
 
 No hay paso de compilación: la extensión se carga tal cual.
 
+También hay una demo pública del visor, sin instalar la extensión ni tener Jira:
+
+**https://xenner.github.io/jira-csv-preview/demo.html**
+
 ## Uso
 
 | Situación | Qué ocurre |

@@ -112,13 +112,12 @@ If the privacy questionnaire asks for data categories, the honest option is **We
 ```text
 The Jira test account may require an email verification code that reviewers cannot receive.
 
-To test the viewer without a Jira account:
-1. Click the extension icon.
-2. Choose "Open demo".
-3. Click "Preview CSV" on the simulated issue.
-4. Test search, sorting, column visibility, theme and CSV export.
+To test the viewer without a Jira account, open:
+https://xenner.github.io/jira-csv-preview/demo.html
+Click "Preview CSV" on the simulated issue.
+Test search, sorting, column visibility, theme and CSV export.
 
-The demo uses bundled sample data. No Jira credentials are required.
+The demo uses sample data and requires no Jira credentials. Installing the extension is optional for this demo.
 ```
 
-The bundled demo is the primary review path. If a Jira test account without OTP is available, its credentials can be added after the demo instructions.
+The public demo is the primary review path. If a Jira test account without OTP is available, its credentials can be added after the demo instructions.
