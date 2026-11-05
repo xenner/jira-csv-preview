@@ -30,6 +30,8 @@ Pensado para los CSV que se adjuntan a tickets: exportaciones de datos, listados
 
 La extensión no recopila datos. Solo consulta la lista de adjuntos de la incidencia y descarga el archivo que decides abrir, usando tu sesión de Jira.
 
+Inspirada en el modelo de interacción de Markdown Preview for Jira. No es un fork ni está afiliada a ese proyecto.
+
 No está afiliada, respaldada ni patrocinada por Atlassian. Jira es una marca registrada de Atlassian Pty Ltd.
 
 ## Justificación de permisos

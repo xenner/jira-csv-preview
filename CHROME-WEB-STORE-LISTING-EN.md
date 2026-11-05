@@ -47,6 +47,8 @@ No data is collected, sold or shared. The extension only reads the attachment li
 
 The extension only runs on Jira domains. No code runs on any other site.
 
+Inspired by the interaction model of Markdown Preview for Jira. This extension is not a fork and is not affiliated with that project.
+
 Not affiliated with, endorsed by, or sponsored by Atlassian. Jira is a trademark of Atlassian Pty Ltd.
 ```
 

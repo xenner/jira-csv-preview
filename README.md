@@ -147,6 +147,7 @@ screenshots/               capturas para la documentación
 CHROME-WEB-STORE-LISTING.md    ficha de Store en español
 CHROME-WEB-STORE-LISTING-EN.md ficha de Store en inglés
 PRIVACY.md / PRIVACY-EN.md     política de privacidad
+THIRD_PARTY_NOTICES.md     atribuciones de terceros (Markdown Preview for Jira, Papa Parse)
 privacy.html               política lista para publicar en una URL pública
 PUBLISHING.md              guía paso a paso para Chrome Web Store
 ```
@@ -159,12 +160,20 @@ Edita `MAX_BYTES` en `src/background.js`. El visor muestra un error claro si el 
 
 ```bash
 cd jira-csv-preview
-zip -r ../jira-csv-preview-1.1.2.zip \
+zip -r ../jira-csv-preview-1.1.3.zip \
   manifest.json viewer.html src options vendor icons _locales \
   README.md PRIVACY.md PRIVACY-EN.md LICENSE
 ```
 
 También puedes usar `chrome://extensions` → **Empaquetar extensión**.
+
+## Inspiración y atribuciones
+
+La idea de mostrar los adjuntos con un botón flotante y abrirlos en un visor sobre la incidencia está inspirada en **Markdown Preview for Jira**, de Fahri (MIT):
+
+- https://github.com/FahreddinHepdonduran/markdown-preview-for-jira
+
+No es un fork ni está afiliada a ese proyecto. La atribución completa y la licencia están en `THIRD_PARTY_NOTICES.md`.
 
 ## Idiomas
 

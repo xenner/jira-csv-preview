@@ -157,8 +157,8 @@ No crees otro item: se mantienen la URL, las instalaciones y las preferencias.
 
 ## Checklist final
 
-- [ ] Versión `1.1.2` en `manifest.json`.
-- [ ] ZIP `dist/jira-csv-preview-1.1.2.zip`.
+- [ ] Versión `1.1.3` en `manifest.json`.
+- [ ] ZIP `dist/jira-csv-preview-1.1.3.zip`.
 - [ ] Cuenta de desarrollador registrada y verificada.
 - [ ] 2FA activo.
 - [ ] Ficha en inglés completa.
