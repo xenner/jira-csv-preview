@@ -39,6 +39,7 @@
 
   const state = {
     doc: null,
+    demo: false,
     bytes: null,
     filename: 'adjunto.csv',
     sourceUrl: '',
@@ -258,6 +259,13 @@
   function closeViewer () {
     if (window.parent !== window) {
       postToParent({ type: 'JCP_VIEWER_CLOSE' });
+      return;
+    }
+    if (typeof chrome !== 'undefined' && chrome.tabs && chrome.tabs.getCurrent) {
+      chrome.tabs.getCurrent((tab) => {
+        if (tab && tab.id != null) chrome.tabs.remove(tab.id);
+        else window.close();
+      });
     } else {
       window.close();
     }
@@ -268,6 +276,7 @@
     const data = event.data || {};
     if (data.type !== 'JCP_RENDER' || !data.doc) return;
     try {
+      state.demo = false;
       loadDocument(data.doc);
     } catch (err) {
       showFatal(t('couldNotPrepareFile'), String((err && err.message) || err));
@@ -282,6 +291,35 @@
     const bytes = new Uint8Array(binary.length);
     for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
     return bytes;
+  }
+
+  function bytesToBase64 (bytes) {
+    let binary = '';
+    const chunk = 0x8000;
+    for (let i = 0; i < bytes.length; i += chunk) {
+      binary += String.fromCharCode.apply(null, bytes.subarray(i, i + chunk));
+    }
+    return btoa(binary);
+  }
+
+  async function loadDemo () {
+    state.demo = true;
+    try {
+      const response = await fetch('demo/sample.csv', { cache: 'no-store' });
+      if (!response.ok) throw new Error('HTTP ' + response.status);
+      const buffer = await response.arrayBuffer();
+      if (!buffer.byteLength) throw new Error('Empty demo file');
+      loadDocument({
+        filename: 'demo-clientes.csv',
+        url: '',
+        size: buffer.byteLength,
+        bytesBase64: bytesToBase64(new Uint8Array(buffer)),
+        jiraTheme: matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      });
+    } catch (err) {
+      showFatal(t('demoLoadError'), String((err && err.message) || err));
+      notifyRendered();
+    }
   }
 
   function decodeBytes (bytes, pref) {
@@ -441,7 +479,9 @@
 
       rebuildData();
       renderAll({ resetScroll: true });
-      setNotice(parsed.warnings.join(' '));
+      const notices = parsed.warnings.slice();
+      if (state.demo) notices.unshift(t('demoNotice'));
+      setNotice(notices.join(' '));
       notifyRendered();
     } catch (err) {
       if (token !== state.parseToken) return;
@@ -1693,14 +1733,18 @@
     updateHeaderButton();
 
     window.addEventListener('message', onMessage);
-    notifyReady();
 
-    if (window.parent === window) {
-      setTimeout(() => {
-        if (!state.doc) {
-          showFatal(t('openFromJiraTitle'), t('openFromJiraDetail'));
-        }
-      }, 1600);
+    if (new URLSearchParams(location.search).get('demo') === '1') {
+      await loadDemo();
+    } else {
+      notifyReady();
+      if (window.parent === window) {
+        setTimeout(() => {
+          if (!state.doc) {
+            showFatal(t('openFromJiraTitle'), t('openFromJiraDetail'));
+          }
+        }, 1600);
+      }
     }
   }
 

@@ -598,5 +598,38 @@
   },
   "localeCode": {
     "message": "es-AR"
+  },
+  "demoPageTitle": {
+    "message": "Demo de Vista previa CSV"
+  },
+  "demoBanner": {
+    "message": "Entorno de demostración — no se necesita conexión con Jira"
+  },
+  "demoIssueTitle": {
+    "message": "DEMO-123 · Revisión de exportación de clientes"
+  },
+  "demoIssueDescription": {
+    "message": "Esta incidencia de Jira simulada viene incluida con la extensión para que puedas probar el visor de CSV sin una cuenta de Jira."
+  },
+  "demoAttachments": {
+    "message": "Adjuntos"
+  },
+  "demoFileNote": {
+    "message": "Datos de ejemplo · 240 filas"
+  },
+  "demoPreview": {
+    "message": "Previsualizar CSV"
+  },
+  "demoFooter": {
+    "message": "Página de demostración incluida para la revisión de Chrome Web Store."
+  },
+  "openDemo": {
+    "message": "Abrir demo"
+  },
+  "demoNotice": {
+    "message": "Datos de demostración — no se necesita conexión con Jira."
+  },
+  "demoLoadError": {
+    "message": "No se pudo cargar el archivo de demostración."
   }
 }

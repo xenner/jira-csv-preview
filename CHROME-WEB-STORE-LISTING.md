@@ -26,6 +26,7 @@ Pensado para los CSV que se adjuntan a tickets: exportaciones de datos, listados
 - Tema claro/oscuro que sigue a Jira.
 - Jira Cloud, Data Center y dominios propios.
 - Atajo `Ctrl + Shift + Y`.
+- Demo incluida con datos de ejemplo para probar el visor sin cuenta de Jira.
 
 La extensión no recopila datos. Solo consulta la lista de adjuntos de la incidencia y descarga el archivo que decides abrir, usando tu sesión de Jira.
 

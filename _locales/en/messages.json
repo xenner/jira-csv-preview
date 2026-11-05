@@ -598,5 +598,38 @@
   },
   "localeCode": {
     "message": "en"
+  },
+  "demoPageTitle": {
+    "message": "CSV Preview demo"
+  },
+  "demoBanner": {
+    "message": "Demo environment — no Jira connection required"
+  },
+  "demoIssueTitle": {
+    "message": "DEMO-123 · Customer export review"
+  },
+  "demoIssueDescription": {
+    "message": "This simulated Jira issue is included with the extension so you can try the CSV viewer without a Jira account."
+  },
+  "demoAttachments": {
+    "message": "Attachments"
+  },
+  "demoFileNote": {
+    "message": "Sample data · 240 rows"
+  },
+  "demoPreview": {
+    "message": "Preview CSV"
+  },
+  "demoFooter": {
+    "message": "Bundled demo page for Chrome Web Store review."
+  },
+  "openDemo": {
+    "message": "Open demo"
+  },
+  "demoNotice": {
+    "message": "Demo data — no Jira connection required."
+  },
+  "demoLoadError": {
+    "message": "Could not load the demo file."
   }
 }

@@ -35,6 +35,7 @@ FEATURES
 - Works with Jira Cloud, Data Center and custom domains.
 - Keyboard shortcut: Ctrl+Shift+Y.
 - Maximum attachment size: 20 MB.
+- Includes a bundled demo with sample data for testing without a Jira account.
 
 LANGUAGES
 
@@ -107,10 +108,15 @@ If the privacy questionnaire asks for data categories, the honest option is **We
 ## Test instructions
 
 ```text
-1. Open https://<test-site>.atlassian.net and sign in with the provided test account.
-2. Open issue ABC-123, which has a CSV attachment.
-3. Click the CSV button in the bottom-right corner of the issue.
-4. Test search, sorting, column visibility and CSV export.
+The Jira test account may require an email verification code that reviewers cannot receive.
+
+To test the viewer without a Jira account:
+1. Click the extension icon.
+2. Choose "Open demo".
+3. Click "Preview CSV" on the simulated issue.
+4. Test search, sorting, column visibility, theme and CSV export.
+
+The demo uses bundled sample data. No Jira credentials are required.
 ```
 
-Create a limited Jira test user with access to one issue and one CSV attachment. If the reviewer cannot access Jira, the extension cannot be fully validated.
+The bundled demo is the primary review path. If a Jira test account without OTP is available, its credentials can be added after the demo instructions.

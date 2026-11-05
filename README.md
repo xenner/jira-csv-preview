@@ -25,6 +25,7 @@ La interfaz está en **inglés por defecto** y se localiza automáticamente a **
   - tema claro/oscuro que sigue el tema de Jira (o el que elijas);
   - descarga del archivo original desde el propio visor.
 - Añade un popup en el icono de la extensión con los CSV de la incidencia actual.
+- Incluye una página de demostración con datos de ejemplo para probar el visor sin una cuenta de Jira.
 - Es compatible con **Markdown Preview for Jira**: si ambos botones flotantes están presentes, el de CSV se apila arriba para no tapar el de Markdown.
 - Atajo `Ctrl + Shift + Y` para abrir el visor desde el teclado.
 
@@ -123,6 +124,8 @@ Para probar la extensión completa con una incidencia simulada, sirve `test/` y 
 ```
 manifest.json              Manifest V3
 viewer.html                visor (iframe)
+demo.html                  página de demostración con una incidencia simulada
+demo/sample.csv            CSV de ejemplo para la demo
 src/
   background.js            service worker: REST + descarga de adjuntos
   content.js               detección de la incidencia, botón y diálogo
@@ -156,7 +159,7 @@ Edita `MAX_BYTES` en `src/background.js`. El visor muestra un error claro si el 
 
 ```bash
 cd jira-csv-preview
-zip -r ../jira-csv-preview-1.1.1.zip \
+zip -r ../jira-csv-preview-1.1.2.zip \
   manifest.json viewer.html src options vendor icons _locales \
   README.md PRIVACY.md PRIVACY-EN.md LICENSE
 ```

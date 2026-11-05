@@ -81,22 +81,47 @@ No uses una URL del GitLab privado: el revisor no puede iniciar sesión.
 
 ## 5. Test instructions
 
-El revisor necesita un Jira accesible desde Internet. Lo ideal es crear un **Jira Cloud gratuito** solo para la revisión:
+### Demostración incluida (recomendado)
 
-1. Crear un sitio de prueba.
-2. Crear una incidencia `ABC-123`.
-3. Adjuntar un CSV pequeño.
-4. Crear un usuario de prueba con acceso limitado.
-5. Pegar en **Test instructions**:
+La extensión incluye una página de demostración que no requiere Jira ni login:
+
+1. El revisor abre el popup del icono de la extensión.
+2. Pulsa **Open demo**.
+3. En la incidencia simulada, pulsa **Preview CSV**.
+4. Prueba búsqueda, ordenación, columnas, tema y exportación.
+
+Pegar en **Test instructions**:
 
 ```text
-1. Open https://<test-site>.atlassian.net and sign in with the provided test account.
-2. Open issue ABC-123, which has a CSV attachment.
-3. Click the CSV button in the bottom-right corner of the issue.
-4. Test search, sorting, column visibility and CSV export.
+The Jira test account may require an email verification code that reviewers cannot receive.
+To test the viewer without a Jira account:
+1. Click the extension icon.
+2. Choose "Open demo".
+3. Click "Preview CSV" on the simulated issue.
+4. Test search, sorting, column visibility, theme and CSV export.
+
+The demo uses bundled sample data. No Jira credentials are required.
 ```
 
-No uses el Jira interno de la empresa si el revisor no puede acceder por VPN. Tampoco compartas datos reales de clientes.
+### Jira real de prueba (opcional)
+
+Si además querés dar acceso a un Jira real:
+
+1. Crear un **Jira Cloud gratuito** solo para la revisión.
+2. Crear una incidencia `ABC-123`.
+3. Adjuntar un CSV pequeño.
+4. Crear un usuario de prueba con acceso limitado y sin OTP/2FA.
+5. Agregar el acceso al final de Test instructions.
+
+```text
+Optional Jira access:
+Site: https://<test-site>.atlassian.net
+Email: <test email>
+Password: <test password>
+Issue: ABC-123
+```
+
+No uses el Jira interno de la empresa si el revisor no puede acceder por VPN. Tampoco compartas datos reales de clientes ni tu Gmail personal.
 
 ## 6. Distribution
 
@@ -132,22 +157,23 @@ No crees otro item: se mantienen la URL, las instalaciones y las preferencias.
 
 ## Checklist final
 
-- [ ] Versión `1.1.1` en `manifest.json`.
-- [ ] ZIP `dist/jira-csv-preview-1.1.1.zip`.
+- [ ] Versión `1.1.2` en `manifest.json`.
+- [ ] ZIP `dist/jira-csv-preview-1.1.2.zip`.
 - [ ] Cuenta de desarrollador registrada y verificada.
 - [ ] 2FA activo.
 - [ ] Ficha en inglés completa.
 - [ ] Capturas 1280×800.
 - [ ] Política de privacidad publicada en URL pública.
 - [ ] Justificación de permisos completa.
-- [ ] Jira de prueba accesible para el revisor.
+- [ ] Demo incluida probada desde el popup.
+- [ ] (Opcional) Jira de prueba accesible para el revisor.
 - [ ] Visibilidad `Unlisted`.
 - [ ] Enviado a revisión.
 
 ## Posibles rechazos
 
 - La política de privacidad no es pública o no carga sin login.
-- El revisor no puede probar la extensión porque no tiene acceso a Jira.
+- El revisor no puede probar la extensión porque no tiene acceso a Jira y no se ofrece la demo incluida.
 - Falta justificar `scripting`, los hosts de Atlassian o el permiso opcional `*://*/*`.
 - La ficha promete funciones que la extensión no tiene.
 - Se intenta evadir el límite de 2 extensiones publicadas creando cuentas duplicadas.

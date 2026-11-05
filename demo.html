@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="demoPageTitle">CSV Preview demo</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f7f8f9;
+      color: #172b4d;
+      font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    }
+    .top {
+      height: 56px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 0 24px;
+      background: #0052cc;
+      color: #fff;
+      font-weight: 600;
+    }
+    .top span { opacity: .75; font-weight: 400; font-size: 13px; }
+    .wrap { max-width: 980px; margin: 34px auto; padding: 0 24px 48px; }
+    .banner {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 26px;
+      padding: 10px 13px;
+      border-radius: 8px;
+      background: #fff7d6;
+      color: #6b4e00;
+      box-shadow: 0 0 0 1px #f5e6a8 inset;
+      font-size: 12.5px;
+    }
+    .banner svg { width: 16px; height: 16px; flex: none; }
+    .crumbs { color: #5e6c84; font-size: 12px; margin-bottom: 14px; }
+    h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: -.02em; }
+    .lede { margin: 0 0 26px; max-width: 760px; color: #5e6c84; font-size: 13px; }
+    .card {
+      margin-bottom: 18px;
+      padding: 19px;
+      border: 1px solid #dfe1e6;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 1px 2px rgba(9, 30, 66, .06);
+    }
+    .card h2 { margin: 0 0 14px; font-size: 14px; }
+    .attachment { display: flex; align-items: center; gap: 13px; flex-wrap: wrap; }
+    .file {
+      width: 40px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #b3f0f5;
+      border-radius: 6px;
+      background: #e6fcff;
+      color: #0e7490;
+      font: 700 9px/1 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    .file-info { flex: 1; min-width: 180px; }
+    .name { font-size: 13px; font-weight: 600; }
+    .meta { margin-top: 2px; color: #5e6c84; font-size: 11px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 34px;
+      padding: 0 14px;
+      border-radius: 7px;
+      background: #0e7490;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 1px 0 rgba(255, 255, 255, .18) inset;
+    }
+    .btn:hover { background: #155e75; }
+    .note {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 16px 18px;
+      border-radius: 10px;
+      background: #e9f2ff;
+      color: #0747a6;
+      font-size: 12.5px;
+    }
+    .note svg { width: 18px; height: 18px; flex: none; margin-top: 1px; }
+    .foot { margin-top: 28px; color: #94a3b8; font-size: 11px; }
+    @media (max-width: 560px) {
+      .wrap { margin-top: 22px; padding: 0 14px 32px; }
+      h1 { font-size: 23px; }
+      .attachment { align-items: flex-start; }
+      .btn { width: 100%; margin-top: 8px; }
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { color-scheme: dark; }
+      body { background: #0b1220; color: #e2e8f0; }
+      .top { background: #0c1a2e; }
+      .card { background: #111a2b; border-color: #263449; box-shadow: none; }
+      .lede, .crumbs, .meta { color: #94a3b8; }
+      .file { background: #083344; border-color: #155e75; color: #67e8f9; }
+      .banner { background: #241b07; color: #fde68a; box-shadow: 0 0 0 1px #713f12 inset; }
+      .note { background: #0d2138; color: #8cc8ff; }
+      .foot { color: #64748b; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top">Jira <span>Projects / DEMO / DEMO-123</span></div>
+  <main class="wrap">
+    <div class="banner">
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10" cy="10" r="7"/><path d="M10 6.2v4.6"/><circle cx="10" cy="14" r=".8" fill="currentColor" stroke="none"/></svg>
+      <span data-i18n="demoBanner">Demo environment — no Jira connection required</span>
+    </div>
+
+    <div class="crumbs">DEMO / DEMO-123</div>
+    <h1 data-i18n="demoIssueTitle">DEMO-123 · Customer export review</h1>
+    <p class="lede" data-i18n="demoIssueDescription">This simulated Jira issue is included with the extension so you can try the CSV viewer without a Jira account.</p>
+
+    <section class="card">
+      <h2 data-i18n="demoAttachments">Attachments</h2>
+      <div class="attachment">
+        <div class="file">CSV</div>
+        <div class="file-info">
+          <div class="name">demo-clientes.csv</div>
+          <div class="meta" data-i18n="demoFileNote">Sample data · 240 rows</div>
+        </div>
+        <a class="btn" href="viewer.html?demo=1" target="_blank" rel="noopener" data-i18n="demoPreview">Preview CSV</a>
+      </div>
+    </section>
+
+    <div class="note">
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2.8 17.6 16H2.4L10 2.8Z" stroke-linejoin="round"/><path d="M10 7.5v3.4"/><circle cx="10" cy="13.7" r=".8" fill="currentColor" stroke="none"/></svg>
+      <span data-i18n="demoFooter">Bundled demo page for Chrome Web Store review.</span>
+    </div>
+
+    <p class="foot">CSV Preview for Jira · DEMO</p>
+  </main>
+
+  <script src="src/i18n.js"></script>
+</body>
+</html>

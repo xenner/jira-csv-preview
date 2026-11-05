@@ -231,6 +231,7 @@ body.popup { width: 366px; }
   background: var(--panel);
 }
 .shortcut-hint { display: flex; align-items: center; gap: 3px; color: var(--faint); font-size: 10.5px; }
+.pop-links { display: flex; align-items: center; gap: 10px; }
 .shortcut-hint kbd { padding: 1px 4px; font-size: 9px; }
 
 /* ----------------------------------------------------------------- options */

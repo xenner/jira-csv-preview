@@ -1,0 +1,271 @@
+ID,Cliente,Email,País,Importe,Fecha,Estado,Notas,Web,Código
+C-00001,Ana López,cliente1@ejemplo.es,Argentina,137.45,2026-01-08,Pendiente,Primera compra,https://ejemplo.es/cliente/1,001-017
+C-00002,Bruno Silva,cliente2@ejemplo.es,Perú,274.90,2026-02-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/2,002-034
+C-00003,Carla Núñez,cliente3@ejemplo.es,Portugal,412.35,2026-03-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/3,003-051
+C-00004,Diego Fernández,cliente4@ejemplo.es,Colombia,549.80,2026-04-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/4,004-068
+C-00005,Elena Rodríguez,cliente5@ejemplo.es,Uruguay,687.25,2026-05-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/5,005-085
+C-00006,Fátima Al-Sayed,cliente6@ejemplo.es,México,824.70,2026-06-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/6,006-102
+C-00007,Gabriel Pérez,cliente7@ejemplo.es,Chile,962.15,2026-07-22,En revisión,,https://ejemplo.es/cliente/7,007-119
+C-00008,Helena Costa,cliente8@ejemplo.es,España,1099.60,2026-08-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/8,008-136
+C-00009,Iván Martínez,cliente9@ejemplo.es,Argentina,1237.05,2026-09-08,Pendiente,Primera compra,https://ejemplo.es/cliente/9,009-153
+C-00010,Julia Gómez,cliente10@ejemplo.es,Perú,1374.50,2026-10-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/10,010-170
+C-00011,Luis Hernández,cliente11@ejemplo.es,Portugal,1511.95,2026-11-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/11,011-187
+C-00012,María José Ruiz,cliente12@ejemplo.es,Colombia,1649.40,2026-12-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/12,012-204
+C-00013,Nicolás Ortiz,cliente13@ejemplo.es,Uruguay,1786.85,2026-01-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/13,013-221
+C-00014,Olga Sánchez,cliente14@ejemplo.es,México,1924.30,2026-02-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/14,014-238
+C-00015,Pablo Romero,cliente15@ejemplo.es,Chile,2061.75,2026-03-22,En revisión,,https://ejemplo.es/cliente/15,015-255
+C-00016,Quintín Vidal,cliente16@ejemplo.es,España,2199.20,2026-04-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/16,016-272
+C-00017,Rosa Díaz,cliente17@ejemplo.es,Argentina,2336.65,2026-05-08,Pendiente,Primera compra,https://ejemplo.es/cliente/17,017-289
+C-00018,Sergio Moreno,cliente18@ejemplo.es,Perú,2474.10,2026-06-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/18,018-306
+C-00019,Teresa Jiménez,cliente19@ejemplo.es,Portugal,2611.55,2026-07-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/19,019-323
+C-00020,Úrsula Navarro,cliente20@ejemplo.es,Colombia,2749.00,2026-08-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/20,020-340
+C-00021,Ana López,cliente21@ejemplo.es,Uruguay,2886.45,2026-09-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/21,021-357
+C-00022,Bruno Silva,cliente22@ejemplo.es,México,3023.90,2026-10-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/22,022-374
+C-00023,Carla Núñez,cliente23@ejemplo.es,Chile,3161.35,2026-11-22,En revisión,,https://ejemplo.es/cliente/23,023-391
+C-00024,Diego Fernández,cliente24@ejemplo.es,España,3298.80,2026-12-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/24,024-408
+C-00025,Elena Rodríguez,cliente25@ejemplo.es,Argentina,3436.25,2026-01-08,Pendiente,Primera compra,https://ejemplo.es/cliente/25,025-425
+C-00026,Fátima Al-Sayed,cliente26@ejemplo.es,Perú,3573.70,2026-02-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/26,026-442
+C-00027,Gabriel Pérez,cliente27@ejemplo.es,Portugal,3711.15,2026-03-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/27,027-459
+C-00028,Helena Costa,cliente28@ejemplo.es,Colombia,3848.60,2026-04-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/28,028-476
+C-00029,Iván Martínez,cliente29@ejemplo.es,Uruguay,3986.05,2026-05-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/29,029-493
+C-00030,Julia Gómez,cliente30@ejemplo.es,México,4123.50,2026-06-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/30,030-510
+C-00031,Luis Hernández,cliente31@ejemplo.es,Chile,4260.95,2026-07-22,En revisión,,https://ejemplo.es/cliente/31,031-527
+C-00032,María José Ruiz,cliente32@ejemplo.es,España,4398.40,2026-08-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/32,032-544
+C-00033,Nicolás Ortiz,cliente33@ejemplo.es,Argentina,4535.85,2026-09-08,Pendiente,Primera compra,https://ejemplo.es/cliente/33,033-561
+C-00034,Olga Sánchez,cliente34@ejemplo.es,Perú,4673.30,2026-10-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/34,034-578
+C-00035,Pablo Romero,cliente35@ejemplo.es,Portugal,4810.75,2026-11-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/35,035-595
+C-00036,Quintín Vidal,cliente36@ejemplo.es,Colombia,4948.20,2026-12-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/36,036-612
+C-00037,Rosa Díaz,cliente37@ejemplo.es,Uruguay,5085.65,2026-01-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/37,037-629
+C-00038,Sergio Moreno,cliente38@ejemplo.es,México,5223.10,2026-02-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/38,038-646
+C-00039,Teresa Jiménez,cliente39@ejemplo.es,Chile,5360.55,2026-03-22,En revisión,,https://ejemplo.es/cliente/39,039-663
+C-00040,Úrsula Navarro,cliente40@ejemplo.es,España,5498.00,2026-04-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/40,040-680
+C-00041,Ana López,cliente41@ejemplo.es,Argentina,5635.45,2026-05-08,Pendiente,Primera compra,https://ejemplo.es/cliente/41,041-697
+C-00042,Bruno Silva,cliente42@ejemplo.es,Perú,5772.90,2026-06-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/42,042-714
+C-00043,Carla Núñez,cliente43@ejemplo.es,Portugal,5910.35,2026-07-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/43,043-731
+C-00044,Diego Fernández,cliente44@ejemplo.es,Colombia,6047.80,2026-08-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/44,044-748
+C-00045,Elena Rodríguez,cliente45@ejemplo.es,Uruguay,6185.25,2026-09-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/45,045-765
+C-00046,Fátima Al-Sayed,cliente46@ejemplo.es,México,6322.70,2026-10-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/46,046-782
+C-00047,Gabriel Pérez,cliente47@ejemplo.es,Chile,6460.15,2026-11-22,En revisión,,https://ejemplo.es/cliente/47,047-799
+C-00048,Helena Costa,cliente48@ejemplo.es,España,6597.60,2026-12-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/48,048-816
+C-00049,Iván Martínez,cliente49@ejemplo.es,Argentina,6735.05,2026-01-08,Pendiente,Primera compra,https://ejemplo.es/cliente/49,049-833
+C-00050,Julia Gómez,cliente50@ejemplo.es,Perú,6872.50,2026-02-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/50,050-850
+C-00051,Luis Hernández,cliente51@ejemplo.es,Portugal,7009.95,2026-03-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/51,051-867
+C-00052,María José Ruiz,cliente52@ejemplo.es,Colombia,7147.40,2026-04-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/52,052-884
+C-00053,Nicolás Ortiz,cliente53@ejemplo.es,Uruguay,7284.85,2026-05-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/53,053-901
+C-00054,Olga Sánchez,cliente54@ejemplo.es,México,7422.30,2026-06-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/54,054-918
+C-00055,Pablo Romero,cliente55@ejemplo.es,Chile,7559.75,2026-07-22,En revisión,,https://ejemplo.es/cliente/55,055-935
+C-00056,Quintín Vidal,cliente56@ejemplo.es,España,7697.20,2026-08-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/56,056-952
+C-00057,Rosa Díaz,cliente57@ejemplo.es,Argentina,7834.65,2026-09-08,Pendiente,Primera compra,https://ejemplo.es/cliente/57,057-969
+C-00058,Sergio Moreno,cliente58@ejemplo.es,Perú,7972.10,2026-10-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/58,058-986
+C-00059,Teresa Jiménez,cliente59@ejemplo.es,Portugal,8109.55,2026-11-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/59,059-004
+C-00060,Úrsula Navarro,cliente60@ejemplo.es,Colombia,8247.00,2026-12-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/60,060-021
+C-00061,Ana López,cliente61@ejemplo.es,Uruguay,8384.45,2026-01-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/61,061-038
+C-00062,Bruno Silva,cliente62@ejemplo.es,México,8521.90,2026-02-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/62,062-055
+C-00063,Carla Núñez,cliente63@ejemplo.es,Chile,8659.35,2026-03-22,En revisión,,https://ejemplo.es/cliente/63,063-072
+C-00064,Diego Fernández,cliente64@ejemplo.es,España,8796.80,2026-04-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/64,064-089
+C-00065,Elena Rodríguez,cliente65@ejemplo.es,Argentina,8934.25,2026-05-08,Pendiente,Primera compra,https://ejemplo.es/cliente/65,065-106
+C-00066,Fátima Al-Sayed,cliente66@ejemplo.es,Perú,9071.70,2026-06-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/66,066-123
+C-00067,Gabriel Pérez,cliente67@ejemplo.es,Portugal,9209.15,2026-07-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/67,067-140
+C-00068,Helena Costa,cliente68@ejemplo.es,Colombia,9346.60,2026-08-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/68,068-157
+C-00069,Iván Martínez,cliente69@ejemplo.es,Uruguay,9484.05,2026-09-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/69,069-174
+C-00070,Julia Gómez,cliente70@ejemplo.es,México,9621.50,2026-10-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/70,070-191
+C-00071,Luis Hernández,cliente71@ejemplo.es,Chile,9758.95,2026-11-22,En revisión,,https://ejemplo.es/cliente/71,071-208
+C-00072,María José Ruiz,cliente72@ejemplo.es,España,9896.40,2026-12-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/72,072-225
+C-00073,Nicolás Ortiz,cliente73@ejemplo.es,Argentina,10033.85,2026-01-08,Pendiente,Primera compra,https://ejemplo.es/cliente/73,073-242
+C-00074,Olga Sánchez,cliente74@ejemplo.es,Perú,10171.30,2026-02-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/74,074-259
+C-00075,Pablo Romero,cliente75@ejemplo.es,Portugal,10308.75,2026-03-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/75,075-276
+C-00076,Quintín Vidal,cliente76@ejemplo.es,Colombia,10446.20,2026-04-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/76,076-293
+C-00077,Rosa Díaz,cliente77@ejemplo.es,Uruguay,10583.65,2026-05-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/77,077-310
+C-00078,Sergio Moreno,cliente78@ejemplo.es,México,10721.10,2026-06-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/78,078-327
+C-00079,Teresa Jiménez,cliente79@ejemplo.es,Chile,10858.55,2026-07-22,En revisión,,https://ejemplo.es/cliente/79,079-344
+C-00080,Úrsula Navarro,cliente80@ejemplo.es,España,10996.00,2026-08-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/80,080-361
+C-00081,Ana López,cliente81@ejemplo.es,Argentina,11133.45,2026-09-08,Pendiente,Primera compra,https://ejemplo.es/cliente/81,081-378
+C-00082,Bruno Silva,cliente82@ejemplo.es,Perú,11270.90,2026-10-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/82,082-395
+C-00083,Carla Núñez,cliente83@ejemplo.es,Portugal,11408.35,2026-11-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/83,083-412
+C-00084,Diego Fernández,cliente84@ejemplo.es,Colombia,11545.80,2026-12-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/84,084-429
+C-00085,Elena Rodríguez,cliente85@ejemplo.es,Uruguay,11683.25,2026-01-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/85,085-446
+C-00086,Fátima Al-Sayed,cliente86@ejemplo.es,México,11820.70,2026-02-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/86,086-463
+C-00087,Gabriel Pérez,cliente87@ejemplo.es,Chile,11958.15,2026-03-22,En revisión,,https://ejemplo.es/cliente/87,087-480
+C-00088,Helena Costa,cliente88@ejemplo.es,España,12095.60,2026-04-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/88,088-497
+C-00089,Iván Martínez,cliente89@ejemplo.es,Argentina,12233.05,2026-05-08,Pendiente,Primera compra,https://ejemplo.es/cliente/89,089-514
+C-00090,Julia Gómez,cliente90@ejemplo.es,Perú,12370.50,2026-06-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/90,090-531
+C-00091,Luis Hernández,cliente91@ejemplo.es,Portugal,12507.95,2026-07-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/91,091-548
+C-00092,María José Ruiz,cliente92@ejemplo.es,Colombia,12645.40,2026-08-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/92,092-565
+C-00093,Nicolás Ortiz,cliente93@ejemplo.es,Uruguay,12782.85,2026-09-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/93,093-582
+C-00094,Olga Sánchez,cliente94@ejemplo.es,México,12920.30,2026-10-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/94,094-599
+C-00095,Pablo Romero,cliente95@ejemplo.es,Chile,13057.75,2026-11-22,En revisión,,https://ejemplo.es/cliente/95,095-616
+C-00096,Quintín Vidal,cliente96@ejemplo.es,España,13195.20,2026-12-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/96,096-633
+C-00097,Rosa Díaz,cliente97@ejemplo.es,Argentina,13332.65,2026-01-08,Pendiente,Primera compra,https://ejemplo.es/cliente/97,097-650
+C-00098,Sergio Moreno,cliente98@ejemplo.es,Perú,13470.10,2026-02-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/98,098-667
+C-00099,Teresa Jiménez,cliente99@ejemplo.es,Portugal,13607.55,2026-03-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/99,099-684
+C-00100,Úrsula Navarro,cliente100@ejemplo.es,Colombia,13745.00,2026-04-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/100,100-701
+C-00101,Ana López,cliente101@ejemplo.es,Uruguay,13882.45,2026-05-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/101,101-718
+C-00102,Bruno Silva,cliente102@ejemplo.es,México,14019.90,2026-06-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/102,102-735
+C-00103,Carla Núñez,cliente103@ejemplo.es,Chile,14157.35,2026-07-22,En revisión,,https://ejemplo.es/cliente/103,103-752
+C-00104,Diego Fernández,cliente104@ejemplo.es,España,14294.80,2026-08-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/104,104-769
+C-00105,Elena Rodríguez,cliente105@ejemplo.es,Argentina,14432.25,2026-09-08,Pendiente,Primera compra,https://ejemplo.es/cliente/105,105-786
+C-00106,Fátima Al-Sayed,cliente106@ejemplo.es,Perú,14569.70,2026-10-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/106,106-803
+C-00107,Gabriel Pérez,cliente107@ejemplo.es,Portugal,14707.15,2026-11-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/107,107-820
+C-00108,Helena Costa,cliente108@ejemplo.es,Colombia,14844.60,2026-12-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/108,108-837
+C-00109,Iván Martínez,cliente109@ejemplo.es,Uruguay,14982.05,2026-01-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/109,109-854
+C-00110,Julia Gómez,cliente110@ejemplo.es,México,15119.50,2026-02-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/110,110-871
+C-00111,Luis Hernández,cliente111@ejemplo.es,Chile,15256.95,2026-03-22,En revisión,,https://ejemplo.es/cliente/111,111-888
+C-00112,María José Ruiz,cliente112@ejemplo.es,España,15394.40,2026-04-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/112,112-905
+C-00113,Nicolás Ortiz,cliente113@ejemplo.es,Argentina,15531.85,2026-05-08,Pendiente,Primera compra,https://ejemplo.es/cliente/113,113-922
+C-00114,Olga Sánchez,cliente114@ejemplo.es,Perú,15669.30,2026-06-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/114,114-939
+C-00115,Pablo Romero,cliente115@ejemplo.es,Portugal,15806.75,2026-07-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/115,115-956
+C-00116,Quintín Vidal,cliente116@ejemplo.es,Colombia,15944.20,2026-08-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/116,116-973
+C-00117,Rosa Díaz,cliente117@ejemplo.es,Uruguay,16081.65,2026-09-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/117,117-990
+C-00118,Sergio Moreno,cliente118@ejemplo.es,México,16219.10,2026-10-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/118,118-008
+C-00119,Teresa Jiménez,cliente119@ejemplo.es,Chile,16356.55,2026-11-22,En revisión,,https://ejemplo.es/cliente/119,119-025
+C-00120,Úrsula Navarro,cliente120@ejemplo.es,España,16494.00,2026-12-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/120,120-042
+C-00121,Ana López,cliente121@ejemplo.es,Argentina,16631.45,2026-01-08,Pendiente,Primera compra,https://ejemplo.es/cliente/121,121-059
+C-00122,Bruno Silva,cliente122@ejemplo.es,Perú,16768.90,2026-02-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/122,122-076
+C-00123,Carla Núñez,cliente123@ejemplo.es,Portugal,16906.35,2026-03-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/123,123-093
+C-00124,Diego Fernández,cliente124@ejemplo.es,Colombia,17043.80,2026-04-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/124,124-110
+C-00125,Elena Rodríguez,cliente125@ejemplo.es,Uruguay,17181.25,2026-05-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/125,125-127
+C-00126,Fátima Al-Sayed,cliente126@ejemplo.es,México,17318.70,2026-06-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/126,126-144
+C-00127,Gabriel Pérez,cliente127@ejemplo.es,Chile,17456.15,2026-07-22,En revisión,,https://ejemplo.es/cliente/127,127-161
+C-00128,Helena Costa,cliente128@ejemplo.es,España,17593.60,2026-08-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/128,128-178
+C-00129,Iván Martínez,cliente129@ejemplo.es,Argentina,17731.05,2026-09-08,Pendiente,Primera compra,https://ejemplo.es/cliente/129,129-195
+C-00130,Julia Gómez,cliente130@ejemplo.es,Perú,17868.50,2026-10-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/130,130-212
+C-00131,Luis Hernández,cliente131@ejemplo.es,Portugal,18005.95,2026-11-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/131,131-229
+C-00132,María José Ruiz,cliente132@ejemplo.es,Colombia,18143.40,2026-12-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/132,132-246
+C-00133,Nicolás Ortiz,cliente133@ejemplo.es,Uruguay,18280.85,2026-01-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/133,133-263
+C-00134,Olga Sánchez,cliente134@ejemplo.es,México,18418.30,2026-02-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/134,134-280
+C-00135,Pablo Romero,cliente135@ejemplo.es,Chile,18555.75,2026-03-22,En revisión,,https://ejemplo.es/cliente/135,135-297
+C-00136,Quintín Vidal,cliente136@ejemplo.es,España,18693.20,2026-04-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/136,136-314
+C-00137,Rosa Díaz,cliente137@ejemplo.es,Argentina,18830.65,2026-05-08,Pendiente,Primera compra,https://ejemplo.es/cliente/137,137-331
+C-00138,Sergio Moreno,cliente138@ejemplo.es,Perú,18968.10,2026-06-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/138,138-348
+C-00139,Teresa Jiménez,cliente139@ejemplo.es,Portugal,19105.55,2026-07-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/139,139-365
+C-00140,Úrsula Navarro,cliente140@ejemplo.es,Colombia,19243.00,2026-08-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/140,140-382
+C-00141,Ana López,cliente141@ejemplo.es,Uruguay,19380.45,2026-09-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/141,141-399
+C-00142,Bruno Silva,cliente142@ejemplo.es,México,19517.90,2026-10-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/142,142-416
+C-00143,Carla Núñez,cliente143@ejemplo.es,Chile,19655.35,2026-11-22,En revisión,,https://ejemplo.es/cliente/143,143-433
+C-00144,Diego Fernández,cliente144@ejemplo.es,España,19792.80,2026-12-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/144,144-450
+C-00145,Elena Rodríguez,cliente145@ejemplo.es,Argentina,19930.25,2026-01-08,Pendiente,Primera compra,https://ejemplo.es/cliente/145,145-467
+C-00146,Fátima Al-Sayed,cliente146@ejemplo.es,Perú,20067.70,2026-02-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/146,146-484
+C-00147,Gabriel Pérez,cliente147@ejemplo.es,Portugal,20205.15,2026-03-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/147,147-501
+C-00148,Helena Costa,cliente148@ejemplo.es,Colombia,20342.60,2026-04-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/148,148-518
+C-00149,Iván Martínez,cliente149@ejemplo.es,Uruguay,20480.05,2026-05-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/149,149-535
+C-00150,Julia Gómez,cliente150@ejemplo.es,México,20617.50,2026-06-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/150,150-552
+C-00151,Luis Hernández,cliente151@ejemplo.es,Chile,20754.95,2026-07-22,En revisión,,https://ejemplo.es/cliente/151,151-569
+C-00152,María José Ruiz,cliente152@ejemplo.es,España,20892.40,2026-08-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/152,152-586
+C-00153,Nicolás Ortiz,cliente153@ejemplo.es,Argentina,21029.85,2026-09-08,Pendiente,Primera compra,https://ejemplo.es/cliente/153,153-603
+C-00154,Olga Sánchez,cliente154@ejemplo.es,Perú,21167.30,2026-10-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/154,154-620
+C-00155,Pablo Romero,cliente155@ejemplo.es,Portugal,21304.75,2026-11-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/155,155-637
+C-00156,Quintín Vidal,cliente156@ejemplo.es,Colombia,21442.20,2026-12-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/156,156-654
+C-00157,Rosa Díaz,cliente157@ejemplo.es,Uruguay,21579.65,2026-01-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/157,157-671
+C-00158,Sergio Moreno,cliente158@ejemplo.es,México,21717.10,2026-02-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/158,158-688
+C-00159,Teresa Jiménez,cliente159@ejemplo.es,Chile,21854.55,2026-03-22,En revisión,,https://ejemplo.es/cliente/159,159-705
+C-00160,Úrsula Navarro,cliente160@ejemplo.es,España,21992.00,2026-04-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/160,160-722
+C-00161,Ana López,cliente161@ejemplo.es,Argentina,22129.45,2026-05-08,Pendiente,Primera compra,https://ejemplo.es/cliente/161,161-739
+C-00162,Bruno Silva,cliente162@ejemplo.es,Perú,22266.90,2026-06-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/162,162-756
+C-00163,Carla Núñez,cliente163@ejemplo.es,Portugal,22404.35,2026-07-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/163,163-773
+C-00164,Diego Fernández,cliente164@ejemplo.es,Colombia,22541.80,2026-08-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/164,164-790
+C-00165,Elena Rodríguez,cliente165@ejemplo.es,Uruguay,22679.25,2026-09-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/165,165-807
+C-00166,Fátima Al-Sayed,cliente166@ejemplo.es,México,22816.70,2026-10-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/166,166-824
+C-00167,Gabriel Pérez,cliente167@ejemplo.es,Chile,22954.15,2026-11-22,En revisión,,https://ejemplo.es/cliente/167,167-841
+C-00168,Helena Costa,cliente168@ejemplo.es,España,23091.60,2026-12-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/168,168-858
+C-00169,Iván Martínez,cliente169@ejemplo.es,Argentina,23229.05,2026-01-08,Pendiente,Primera compra,https://ejemplo.es/cliente/169,169-875
+C-00170,Julia Gómez,cliente170@ejemplo.es,Perú,23366.50,2026-02-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/170,170-892
+C-00171,Luis Hernández,cliente171@ejemplo.es,Portugal,23503.95,2026-03-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/171,171-909
+C-00172,María José Ruiz,cliente172@ejemplo.es,Colombia,23641.40,2026-04-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/172,172-926
+C-00173,Nicolás Ortiz,cliente173@ejemplo.es,Uruguay,23778.85,2026-05-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/173,173-943
+C-00174,Olga Sánchez,cliente174@ejemplo.es,México,23916.30,2026-06-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/174,174-960
+C-00175,Pablo Romero,cliente175@ejemplo.es,Chile,24053.75,2026-07-22,En revisión,,https://ejemplo.es/cliente/175,175-977
+C-00176,Quintín Vidal,cliente176@ejemplo.es,España,24191.20,2026-08-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/176,176-994
+C-00177,Rosa Díaz,cliente177@ejemplo.es,Argentina,24328.65,2026-09-08,Pendiente,Primera compra,https://ejemplo.es/cliente/177,177-012
+C-00178,Sergio Moreno,cliente178@ejemplo.es,Perú,24466.10,2026-10-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/178,178-029
+C-00179,Teresa Jiménez,cliente179@ejemplo.es,Portugal,24603.55,2026-11-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/179,179-046
+C-00180,Úrsula Navarro,cliente180@ejemplo.es,Colombia,24741.00,2026-12-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/180,180-063
+C-00181,Ana López,cliente181@ejemplo.es,Uruguay,24878.45,2026-01-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/181,181-080
+C-00182,Bruno Silva,cliente182@ejemplo.es,México,25015.90,2026-02-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/182,182-097
+C-00183,Carla Núñez,cliente183@ejemplo.es,Chile,25153.35,2026-03-22,En revisión,,https://ejemplo.es/cliente/183,183-114
+C-00184,Diego Fernández,cliente184@ejemplo.es,España,25290.80,2026-04-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/184,184-131
+C-00185,Elena Rodríguez,cliente185@ejemplo.es,Argentina,25428.25,2026-05-08,Pendiente,Primera compra,https://ejemplo.es/cliente/185,185-148
+C-00186,Fátima Al-Sayed,cliente186@ejemplo.es,Perú,25565.70,2026-06-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/186,186-165
+C-00187,Gabriel Pérez,cliente187@ejemplo.es,Portugal,25703.15,2026-07-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/187,187-182
+C-00188,Helena Costa,cliente188@ejemplo.es,Colombia,25840.60,2026-08-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/188,188-199
+C-00189,Iván Martínez,cliente189@ejemplo.es,Uruguay,25978.05,2026-09-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/189,189-216
+C-00190,Julia Gómez,cliente190@ejemplo.es,México,26115.50,2026-10-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/190,190-233
+C-00191,Luis Hernández,cliente191@ejemplo.es,Chile,26252.95,2026-11-22,En revisión,,https://ejemplo.es/cliente/191,191-250
+C-00192,María José Ruiz,cliente192@ejemplo.es,España,26390.40,2026-12-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/192,192-267
+C-00193,Nicolás Ortiz,cliente193@ejemplo.es,Argentina,26527.85,2026-01-08,Pendiente,Primera compra,https://ejemplo.es/cliente/193,193-284
+C-00194,Olga Sánchez,cliente194@ejemplo.es,Perú,26665.30,2026-02-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/194,194-301
+C-00195,Pablo Romero,cliente195@ejemplo.es,Portugal,26802.75,2026-03-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/195,195-318
+C-00196,Quintín Vidal,cliente196@ejemplo.es,Colombia,26940.20,2026-04-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/196,196-335
+C-00197,Rosa Díaz,cliente197@ejemplo.es,Uruguay,27077.65,2026-05-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/197,197-352
+C-00198,Sergio Moreno,cliente198@ejemplo.es,México,27215.10,2026-06-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/198,198-369
+C-00199,Teresa Jiménez,cliente199@ejemplo.es,Chile,27352.55,2026-07-22,En revisión,,https://ejemplo.es/cliente/199,199-386
+C-00200,Úrsula Navarro,cliente200@ejemplo.es,España,27490.00,2026-08-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/200,200-403
+C-00201,Ana López,cliente201@ejemplo.es,Argentina,27627.45,2026-09-08,Pendiente,Primera compra,https://ejemplo.es/cliente/201,201-420
+C-00202,Bruno Silva,cliente202@ejemplo.es,Perú,27764.90,2026-10-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/202,202-437
+C-00203,Carla Núñez,cliente203@ejemplo.es,Portugal,27902.35,2026-11-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/203,203-454
+C-00204,Diego Fernández,cliente204@ejemplo.es,Colombia,28039.80,2026-12-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/204,204-471
+C-00205,Elena Rodríguez,cliente205@ejemplo.es,Uruguay,28177.25,2026-01-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/205,205-488
+C-00206,Fátima Al-Sayed,cliente206@ejemplo.es,México,28314.70,2026-02-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/206,206-505
+C-00207,Gabriel Pérez,cliente207@ejemplo.es,Chile,28452.15,2026-03-22,En revisión,,https://ejemplo.es/cliente/207,207-522
+C-00208,Helena Costa,cliente208@ejemplo.es,España,28589.60,2026-04-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/208,208-539
+C-00209,Iván Martínez,cliente209@ejemplo.es,Argentina,28727.05,2026-05-08,Pendiente,Primera compra,https://ejemplo.es/cliente/209,209-556
+C-00210,Julia Gómez,cliente210@ejemplo.es,Perú,28864.50,2026-06-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/210,210-573
+C-00211,Luis Hernández,cliente211@ejemplo.es,Portugal,29001.95,2026-07-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/211,211-590
+C-00212,María José Ruiz,cliente212@ejemplo.es,Colombia,29139.40,2026-08-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/212,212-607
+C-00213,Nicolás Ortiz,cliente213@ejemplo.es,Uruguay,29276.85,2026-09-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/213,213-624
+C-00214,Olga Sánchez,cliente214@ejemplo.es,México,29414.30,2026-10-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/214,214-641
+C-00215,Pablo Romero,cliente215@ejemplo.es,Chile,29551.75,2026-11-22,En revisión,,https://ejemplo.es/cliente/215,215-658
+C-00216,Quintín Vidal,cliente216@ejemplo.es,España,29689.20,2026-12-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/216,216-675
+C-00217,Rosa Díaz,cliente217@ejemplo.es,Argentina,29826.65,2026-01-08,Pendiente,Primera compra,https://ejemplo.es/cliente/217,217-692
+C-00218,Sergio Moreno,cliente218@ejemplo.es,Perú,29964.10,2026-02-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/218,218-709
+C-00219,Teresa Jiménez,cliente219@ejemplo.es,Portugal,30101.55,2026-03-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/219,219-726
+C-00220,Úrsula Navarro,cliente220@ejemplo.es,Colombia,30239.00,2026-04-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/220,220-743
+C-00221,Ana López,cliente221@ejemplo.es,Uruguay,30376.45,2026-05-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/221,221-760
+C-00222,Bruno Silva,cliente222@ejemplo.es,México,30513.90,2026-06-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/222,222-777
+C-00223,Carla Núñez,cliente223@ejemplo.es,Chile,30651.35,2026-07-22,En revisión,,https://ejemplo.es/cliente/223,223-794
+C-00224,Diego Fernández,cliente224@ejemplo.es,España,30788.80,2026-08-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/224,224-811
+C-00225,Elena Rodríguez,cliente225@ejemplo.es,Argentina,30926.25,2026-09-08,Pendiente,Primera compra,https://ejemplo.es/cliente/225,225-828
+C-00226,Fátima Al-Sayed,cliente226@ejemplo.es,Perú,31063.70,2026-10-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/226,226-845
+C-00227,Gabriel Pérez,cliente227@ejemplo.es,Portugal,31201.15,2026-11-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/227,227-862
+C-00228,Helena Costa,cliente228@ejemplo.es,Colombia,31338.60,2026-12-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/228,228-879
+C-00229,Iván Martínez,cliente229@ejemplo.es,Uruguay,31476.05,2026-01-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/229,229-896
+C-00230,Julia Gómez,cliente230@ejemplo.es,México,31613.50,2026-02-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/230,230-913
+C-00231,Luis Hernández,cliente231@ejemplo.es,Chile,31750.95,2026-03-22,En revisión,,https://ejemplo.es/cliente/231,231-930
+C-00232,María José Ruiz,cliente232@ejemplo.es,España,31888.40,2026-04-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/232,232-947
+C-00233,Nicolás Ortiz,cliente233@ejemplo.es,Argentina,32025.85,2026-05-08,Pendiente,Primera compra,https://ejemplo.es/cliente/233,233-964
+C-00234,Olga Sánchez,cliente234@ejemplo.es,Perú,32163.30,2026-06-15,Cancelado,Solicita factura,https://ejemplo.es/cliente/234,234-981
+C-00235,Pablo Romero,cliente235@ejemplo.es,Portugal,32300.75,2026-07-22,En revisión,Entrega urgente,https://ejemplo.es/cliente/235,235-998
+C-00236,Quintín Vidal,cliente236@ejemplo.es,Colombia,32438.20,2026-08-01,Pagado,Dirección actualizada,https://ejemplo.es/cliente/236,236-016
+C-00237,Rosa Díaz,cliente237@ejemplo.es,Uruguay,32575.65,2026-09-08,Pendiente,"""Incluye"" comillas, coma y
+salto de línea",https://ejemplo.es/cliente/237,237-033
+C-00238,Sergio Moreno,cliente238@ejemplo.es,México,32713.10,2026-10-15,Cancelado,Prefiere contacto por email,https://ejemplo.es/cliente/238,238-050
+C-00239,Teresa Jiménez,cliente239@ejemplo.es,Chile,32850.55,2026-11-22,En revisión,,https://ejemplo.es/cliente/239,239-067
+C-00240,Úrsula Navarro,cliente240@ejemplo.es,España,32988.00,2026-12-01,Pagado,Cliente recurrente,https://ejemplo.es/cliente/240,240-084

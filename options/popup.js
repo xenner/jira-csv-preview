@@ -85,4 +85,9 @@ async function init () {
 
 $('open-options').addEventListener('click', () => chrome.runtime.openOptionsPage());
 
+$('open-demo').addEventListener('click', () => {
+  chrome.tabs.create({ url: chrome.runtime.getURL('demo.html') });
+  window.close();
+});
+
 init();
